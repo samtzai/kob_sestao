@@ -1,0 +1,149 @@
+\documentclass[10pt,a4paper,oneside]{book}
+
+\usepackage{kob_sestao}
+\geometry{a4paper,top=12mm,bottom=12mm,left=13mm,right=13mm,headheight=0pt}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\definecolor{Paper}{HTML}{FAF8F2}
+\definecolor{InkSoft}{HTML}{4B5358}
+\definecolor{Line}{HTML}{B9C1C4}
+\definecolor{RustPale}{HTML}{F7E9E2}
+\definecolor{BluePale}{HTML}{E5F2F6}
+\definecolor{GreenPale}{HTML}{E2F5F0}
+
+\newcommand{\field}[2][\linewidth]{%
+  \begin{minipage}[t]{#1}
+  \textcolor{InkSoft}{\terminalfont\scriptsize\MakeUppercase{#2}}\par
+  \vspace{1.5mm}\textcolor{Line}{\rule{\linewidth}{0.45pt}}
+  \end{minipage}}
+
+\newcommand{\strip}[1]{%
+  \vspace{1.5mm}\noindent
+  \colorbox{CarbonSestao}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+    \textcolor{white}{\industrialfont\bfseries\small\MakeUppercase{#1}}}}\par
+  \vspace{1.5mm}}
+
+\begin{document}
+\pagecolor{Paper}
+
+\noindent
+\begin{minipage}[c]{0.70\linewidth}
+  {\industrialfont\bfseries\fontsize{24}{25}\selectfont\color{CarbonSestao}ENTRE BARCOS Y ACERO}\par
+  \vspace{1mm}
+  {\industrialfont\bfseries\small\color{OxidoSestao}SESTAO 1992 \textcolor{AceroNervion}{//} HOJA DE PERSONAJE KIDS ON BIKES}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.26\linewidth}
+  \raggedleft
+  {\terminalfont\scriptsize\color{InkSoft}SISTEMA KOB}\par
+  {\industrialfont\bfseries\large\color{AceroNervion}EXPEDIENTE JUVENIL}
+\end{minipage}
+
+\vspace{2mm}
+\textcolor{OxidoSestao}{\rule{\linewidth}{1.4pt}}
+\vspace{2mm}
+
+\begin{minipage}[t]{0.38\linewidth}
+  \field{Nombre del personaje}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.18\linewidth}
+  \field{Edad (11--15)}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.38\linewidth}
+  \field{Arquetipo / Rol en la pandilla}
+\end{minipage}
+
+\vspace{3mm}
+
+\begin{minipage}[t]{0.48\linewidth}
+  \field{Colegio / Instituto (Ángela Figuera, Las Llanas...)}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+  \field{Barrio (Markonzaga, Txabarri, La Iberia...)}
+\end{minipage}
+
+\strip{Los Seis Atributos Poliédricos (Asigna: d20, d12, d10, d8, d6, d4)}
+
+\vspace{1mm}
+\noindent
+\begin{tabularx}{\linewidth}{X X X}
+  \colorbox{BluePale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
+    \textcolor{AceroNervion}{\industrialfont\bfseries\small ASTUCIA (BRAINS)}\par
+    \vspace{1mm}\terminalfont\scriptsize Lógica, electrónica, pistas\par
+    \vspace{2mm}\centering{\industrialfont\bfseries\Large [ \hspace{8mm} ]}
+  }} &
+  \colorbox{RustPale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
+    \textcolor{OxidoSestao}{\industrialfont\bfseries\small MÚSCULO (BRAWN)}\par
+    \vspace{1mm}\terminalfont\scriptsize Fuerza pura, forzar rejas\par
+    \vspace{2mm}\centering{\industrialfont\bfseries\Large [ \hspace{8mm} ]}
+  }} &
+  \colorbox{BluePale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
+    \textcolor{AceroNervion}{\industrialfont\bfseries\small COMBATE (FIGHT)}\par
+    \vspace{1mm}\terminalfont\scriptsize Pelear, defender a un amigo\par
+    \vspace{2mm}\centering{\industrialfont\bfseries\Large [ \hspace{8mm} ]}
+  }}
+\end{tabularx}
+
+\vspace{2mm}
+\noindent
+\begin{tabularx}{\linewidth}{X X X}
+  \colorbox{RustPale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
+    \textcolor{OxidoSestao}{\industrialfont\bfseries\small REFLEJOS (FLIGHT)}\par
+    \vspace{1mm}\terminalfont\scriptsize Pedalear rápido, esquivar\par
+    \vspace{2mm}\centering{\industrialfont\bfseries\Large [ \hspace{8mm} ]}
+  }} &
+  \colorbox{BluePale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
+    \textcolor{AceroNervion}{\industrialfont\bfseries\small VIGOR (GRIT)}\par
+    \vspace{1mm}\terminalfont\scriptsize Sangre fría, no tener miedo\par
+    \vspace{2mm}\centering{\industrialfont\bfseries\Large [ \hspace{8mm} ]}
+  }} &
+  \colorbox{RustPale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
+    \textcolor{OxidoSestao}{\industrialfont\bfseries\small LABIA (CHARM)}\par
+    \vspace{1mm}\terminalfont\scriptsize Mentir a adultos, calmar\par
+    \vspace{2mm}\centering{\industrialfont\bfseries\Large [ \hspace{8mm} ]}
+  }}
+\end{tabularx}
+
+\strip{Vehículo: Mi Bicicleta}
+
+\vspace{1mm}
+\begin{minipage}[t]{0.48\linewidth}
+  \field{Modelo y marca (BH California, Orbea BMX, Torrot...)}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+  \field{Ventaja especial (Transportín, timbres, cambio de marchas...)}
+\end{minipage}
+
+\strip{Fichas de Adversidad y Vínculo con Alex Etxebarria}
+
+\vspace{1mm}
+\begin{minipage}[t]{0.35\linewidth}
+  \textbf{\industrialfont\small FICHAS DE ADVERSIDAD}\par
+  \vspace{1mm}
+  {\scriptsize Marca una casilla cada vez que falles una tirada. Gástalas (+1) o úsalas para activar los poderes de Alex.}\par
+  \vspace{2mm}
+  \large $\square\quad\square\quad\square\quad\square\quad\square\quad\square\quad\square\quad\square\quad\square\quad\square$
+\end{minipage}\hfill
+\begin{minipage}[t]{0.60\linewidth}
+  \field{¿Qué recuerdo o secreto compartes con Alex antes de su desaparición?}
+  \vspace{4mm}
+  \field{¿Qué objeto o pista de Alex conservas en secreto?}
+\end{minipage}
+
+\strip{Equipo en la Mochila y Notas de Investigación}
+
+\vspace{1mm}
+\begin{minipage}[t]{0.48\linewidth}
+  \field{Objetos personales (Walkman, linterna, tirachinas, navaja...)}
+  \vspace{4mm}
+  \field{Dinero de bolsillo (monedas de 25 y 100 ptas)}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+  \field{Pistas sobre Babcock \& Wilcox y la cueva de La Arboleda}
+  \vspace{4mm}
+  \field{Fecha límite: ¡Eclipse total de Luna (8 de diciembre)!}
+\end{minipage}
+
+\end{document}

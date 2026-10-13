@@ -1,0 +1,188 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{kob_sestao}[2026/10/13 Estilo Kids on Bikes Sestao 1992 (XeLaTeX)]
+
+\RequirePackage{iftex}
+\RequireXeTeX
+
+% --- Base ---------------------------------------------------------------
+\RequirePackage{fontspec}
+\RequirePackage{amssymb}
+\RequirePackage[spanish]{babel}
+\RequirePackage{microtype}
+\RequirePackage[a5paper,top=20mm,bottom=20mm,left=17mm,right=17mm,headheight=18pt]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage[table]{xcolor}
+\RequirePackage{array}
+\RequirePackage{tabularx}
+\RequirePackage{booktabs}
+\RequirePackage{enumitem}
+\RequirePackage{titlesec}
+\RequirePackage{fancyhdr}
+\RequirePackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+% --- Fuentes (TeX Gyre, incluidas en TeX Live) ---------------------------
+\setmainfont{TeX Gyre Pagella}[Numbers=OldStyle]
+\setsansfont{TeX Gyre Heros}[Scale=MatchLowercase]
+\newfontfamily\industrialfont{TeX Gyre Adventor}[Scale=MatchUppercase]
+\newfontfamily\terminalfont{TeX Gyre Cursor}[Scale=MatchLowercase]
+
+% --- Paleta Sestao 1992 -------------------------------------------------
+\definecolor{OxidoSestao}{HTML}{B84A1E}
+\definecolor{AceroNervion}{HTML}{1B4965}
+\definecolor{EterAlien}{HTML}{009B77}
+\definecolor{CarbonSestao}{HTML}{20252B}
+\definecolor{OcreRetro}{HTML}{C49E35}
+\colorlet{SteelLight}{CarbonSestao!12!white}
+\definecolor{BoxRust}{HTML}{F8E9E2}
+\definecolor{BoxBlue}{HTML}{E2F1F6}
+\definecolor{BoxGreen}{HTML}{E2F5F0}
+\definecolor{BoxGold}{HTML}{F8F1DC}
+\definecolor{BoxGray}{HTML}{ECEFF1}
+
+\RequirePackage[hidelinks,unicode,pdfauthor={Samtzai},pdftitle={Entre barcos y acero: Sestao 1992 (Kids on Bikes)}]{hyperref}
+
+% --- Idioma y formatos --------------------------------------------------
+\renewcommand{\contentsname}{Índice de contenidos}
+\renewcommand{\chaptername}{Capítulo}
+\renewcommand{\partname}{Parte}
+\renewcommand{\figurename}{Figura}
+
+\emergencystretch=2em
+
+\color{CarbonSestao}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em plus 0.2em minus 0.1em}
+\setcounter{tocdepth}{1}
+
+\setlist{leftmargin=1.4em,itemsep=2pt,topsep=3pt,parsep=0pt}
+
+% --- Titulares ----------------------------------------------------------
+\titleformat{\chapter}[display]
+  {\raggedright\normalfont}
+  {\industrialfont\bfseries\small\color{AceroNervion}SESTAO 1992 // \MakeUppercase{\chaptername}~\thechapter}
+  {4pt}
+  {\industrialfont\bfseries\LARGE\color{CarbonSestao}}
+  [\vspace{4pt}{\color{OxidoSestao}\titlerule[1.2pt]}]
+\titlespacing*{\chapter}{0pt}{0pt}{16pt}
+
+\titleformat{\section}{\industrialfont\bfseries\large\color{OxidoSestao}\raggedright}{\thesection}{0.6em}{}
+\titlespacing*{\section}{0pt}{2.2ex plus .5ex minus .2ex}{1ex plus .2ex}
+\titleformat{\subsection}{\industrialfont\bfseries\normalsize\color{AceroNervion}\raggedright}{\thesubsection}{0.6em}{}
+\titlespacing*{\subsection}{0pt}{1.8ex plus .4ex minus .2ex}{.6ex plus .1ex}
+\titleformat{\subsubsection}{\industrialfont\bfseries\small\color{OcreRetro}\raggedright}{\thesubsubsection}{0.6em}{}
+\titlespacing*{\subsubsection}{0pt}{1.4ex plus .3ex minus .2ex}{.4ex}
+
+\makeatletter
+\def\@part[#1]#2{%
+  \ifnum \c@secnumdepth >-2\relax
+    \refstepcounter{part}%
+    \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+  \else
+    \addcontentsline{toc}{part}{#1}%
+  \fi
+  {\parindent\z@ \centering \interlinepenalty\@M \normalfont
+   \vspace*{\fill}%
+   {\industrialfont\bfseries\large\color{OxidoSestao}\MakeUppercase{\partname}~\thepart\par}%
+   \vskip 12\p@
+   {\industrialfont\bfseries\Huge\color{CarbonSestao}#2\par}%
+   \vspace*{\fill}\par}%
+  \@endpart}
+\makeatother
+
+% --- Cabeceras ----------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancyhead[L]{\industrialfont\bfseries\scriptsize\color{AceroNervion}ENTRE BARCOS Y ACERO // SESTAO 1992}
+\fancyhead[R]{\terminalfont\scriptsize\color{OxidoSestao}KIDS ON BIKES}
+\fancyfoot[L]{\industrialfont\scriptsize\color{CarbonSestao}KOB // AVENTURA DE CAMPAÑA}
+\fancyfoot[R]{\industrialfont\bfseries\small\color{AceroNervion}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{AceroNervion}\leaders\hrule height \headrulewidth\hfill}}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[R]{\industrialfont\bfseries\small\color{AceroNervion}\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% --- Cajas tcolorbox ----------------------------------------------------
+\newtcolorbox{CajaSecreto}{
+  breakable,
+  enhanced,
+  colback=BoxRust,
+  colframe=OxidoSestao,
+  arc=1mm,
+  boxrule=0.8pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  fonttitle=\industrialfont\bfseries\small\color{OxidoSestao},
+  title={SECRETO DEL DIRECTOR DE JUEGO // SOLO OJOS DEL MASTER},
+  before skip=8pt, after skip=8pt
+}
+
+\newtcolorbox{CajaRegla}[1]{
+  breakable,
+  enhanced,
+  colback=BoxBlue,
+  colframe=AceroNervion,
+  arc=1mm,
+  boxrule=0.8pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  fonttitle=\industrialfont\bfseries\small\color{AceroNervion},
+  title={REGLA KIDS ON BIKES // #1},
+  before skip=8pt, after skip=8pt
+}
+
+\newtcolorbox{CajaEter}[1]{
+  breakable,
+  enhanced,
+  colback=BoxGreen,
+  colframe=EterAlien,
+  arc=1mm,
+  boxrule=0.8pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  fonttitle=\industrialfont\bfseries\small\color{EterAlien},
+  title={ANOMALÍA DEL ÉTER // #1},
+  before skip=8pt, after skip=8pt
+}
+
+\newtcolorbox{CajaCinematica}[1]{
+  breakable,
+  enhanced,
+  colback=BoxGold,
+  colframe=OcreRetro,
+  arc=1mm,
+  boxrule=0.8pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  fonttitle=\industrialfont\bfseries\small\color{OcreRetro},
+  title={GUION CINEMÁTICO // #1},
+  before skip=8pt, after skip=8pt
+}
+
+\newtcolorbox{CajaDossier}[1]{
+  breakable,
+  enhanced,
+  colback=BoxGray,
+  colframe=CarbonSestao,
+  arc=1mm,
+  boxrule=0.8pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  fonttitle=\terminalfont\bfseries\small\color{CarbonSestao},
+  title={ARCHIVO MUNICIPAL SESTAO // #1},
+  before skip=8pt, after skip=8pt
+}
+
+% --- Macros de estilo ---------------------------------------------------
+\newcommand{\lead}[1]{\textbf{\textcolor{OxidoSestao}{#1}}}
+\newcommand{\dado}[1]{\textbf{\colorbox{AceroNervion}{\textcolor{white}{\textsf{\small #1}}}}}
+\newcommand{\etiqueta}[1]{\textbf{\colorbox{SteelLight}{\textcolor{CarbonSestao}{\scriptsize\textsf{#1}}}}}
+\newcommand{\cine}[1]{\textbf{\textcolor{OcreRetro}{#1}}}
+
+\newcommand{\kobfigure}[2]{%
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\linewidth]{#1}
+    \caption{#2}
+  \end{figure}
+}

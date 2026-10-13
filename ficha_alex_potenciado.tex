@@ -1,0 +1,111 @@
+\documentclass[10pt,a4paper,oneside]{book}
+
+\usepackage{kob_sestao}
+\geometry{a4paper,top=12mm,bottom=12mm,left=13mm,right=13mm,headheight=0pt}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\definecolor{Paper}{HTML}{FAF8F2}
+\definecolor{InkSoft}{HTML}{4B5358}
+\definecolor{Line}{HTML}{B9C1C4}
+\definecolor{GreenPale}{HTML}{E2F5F0}
+\definecolor{RustPale}{HTML}{F7E9E2}
+\definecolor{BluePale}{HTML}{E5F2F6}
+
+\newcommand{\field}[2][\linewidth]{%
+  \begin{minipage}[t]{#1}
+  \textcolor{InkSoft}{\terminalfont\scriptsize\MakeUppercase{#2}}\par
+  \vspace{1.5mm}\textcolor{Line}{\rule{\linewidth}{0.45pt}}
+  \end{minipage}}
+
+\newcommand{\strip}[1]{%
+  \vspace{1.5mm}\noindent
+  \colorbox{EterAlien}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+    \textcolor{white}{\industrialfont\bfseries\small\MakeUppercase{#1}}}}\par
+  \vspace{1.5mm}}
+
+\begin{document}
+\pagecolor{Paper}
+
+\noindent
+\begin{minipage}[c]{0.70\linewidth}
+  {\industrialfont\bfseries\fontsize{24}{25}\selectfont\color{CarbonSestao}ALEX ETXEBARRIA}\par
+  \vspace{1mm}
+  {\industrialfont\bfseries\small\color{EterAlien}SESTAO 1992 \textcolor{OxidoSestao}{//} FICHA DE PERSONAJE POTENCIADO (KIDS ON BIKES)}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.26\linewidth}
+  \raggedleft
+  {\terminalfont\scriptsize\color{InkSoft}SUJETO 01 // B\&W}\par
+  {\industrialfont\bfseries\large\color{EterAlien}CANALIZADOR DE ÉTER}
+\end{minipage}
+
+\vspace{2mm}
+\textcolor{EterAlien}{\rule{\linewidth}{1.4pt}}
+\vspace{2mm}
+
+\begin{minipage}[t]{0.48\linewidth}
+  \textbf{\industrialfont\normalsize ESTADO FÍSICO Y MEMORIA:}\par
+  {\small Edad aparente: 11 años. Piel pálida, mirada distante, halo verde esmeralda en el iris. Desaparecido en 1989; fugado de B\&W tras provocar el incendio en los laboratorios.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+  \textbf{\industrialfont\normalsize RESERVA COLECTIVA DE FICHAS DE ADVERSIDAD:}\par
+  \vspace{1mm}
+  {\scriptsize Colocad aquí las fichas de adversidad que los jugadores decidan invertir para activar las habilidades de Alex.}\par
+  \vspace{2mm}
+  \large $\square\quad\square\quad\square\quad\square\quad\square\quad\square\quad\square\quad\square\quad\square\quad\square\quad\square\quad\square$
+\end{minipage}
+
+\strip{Los Cuatro Aspectos Compartidos (Repartid uno a cada jugador de la mesa)}
+
+\vspace{1mm}
+\noindent
+\begin{tabularx}{\linewidth}{X X}
+  \colorbox{GreenPale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
+    \textcolor{EterAlien}{\industrialfont\bfseries\small 1. EL GUARDIÁN DE LOS RECUERDOS}\par
+    \vspace{1mm}\terminalfont\scriptsize Jugador asignado:\par
+    \vspace{1mm}{\small Decide cuándo Alex recuerda un momento clave de su infancia antes de 1989 o un trauma vivido con el Dr. Kessler.}
+  }} &
+  \colorbox{RustPale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
+    \textcolor{OxidoSestao}{\industrialfont\bfseries\small 2. LA BRÚJULA EMOCIONAL}\par
+    \vspace{1mm}\terminalfont\scriptsize Jugador asignado:\par
+    \vspace{1mm}{\small Expresa el miedo de Alex ante los adultos, su apego a sus amigos y sus cambios bruscos de humor.}
+  }}
+\end{tabularx}
+
+\vspace{2mm}
+\noindent
+\begin{tabularx}{\linewidth}{X X}
+  \colorbox{BluePale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
+    \textcolor{AceroNervion}{\industrialfont\bfseries\small 3. EL CANALIZADOR DEL ÉTER}\par
+    \vspace{1mm}\terminalfont\scriptsize Jugador asignado:\par
+    \vspace{1mm}{\small Describe los fenómenos físicos cuando Alex se altera: farolas que parpadean, estática en el pelo, aire helado.}
+  }} &
+  \colorbox{GreenPale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
+    \textcolor{EterAlien}{\industrialfont\bfseries\small 4. EL PROTECTOR DEL GRUPO}\par
+    \vspace{1mm}\terminalfont\scriptsize Jugador asignado:\par
+    \vspace{1mm}{\small Decide cómo reacciona Alex instintivamente cuando un amigo corre peligro inminente de ser herido o capturado.}
+  }}
+\end{tabularx}
+
+\strip{Catálogo de Poderes del Éter y Coste en Fichas}
+
+\vspace{1mm}
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{Telequinesis menor (Coste: 1 Ficha):} Mover objetos a distancia, atrancar puertas, arrojar piedras con fuerza de proyectil o desarmar a un guardia.
+  \item \textbf{Visión de energía (Coste: 1 Ficha):} Ver corrientes de Éter a través de muros de hormigón, detectar cámaras de B\&W o percibir mentiras.
+  \item \textbf{Escudo de resonancia (Coste: 2 Fichas):} Desviar balas, frenar un vehículo en marcha o amortiguar caídas de gran altura para el grupo.
+  \item \textbf{Distorsión temporal (Coste: 3 Fichas):} Detener momentáneamente el tiempo durante 5 segundos para huir de una trampa mortal.
+\end{itemize}
+
+\strip{Tirada de Estrés Psíquico (Lanza 1d6 tras cada uso de poder)}
+
+\vspace{1mm}
+\begin{tabularx}{\linewidth}{l X}
+  \textbf{Resultado 1--2:} & \textbf{Éxito controlado:} Fatiga leve, ligero sangrado nasal o mareo pasajero.\\
+  \textbf{Resultado 3--5:} & \textbf{Fuga de Éter:} Las luces estallan, las radios emiten pitidos y las patrullas de B\&W detectan la posición.\\
+  \textbf{Resultado 6:}    & \textbf{Sobrecarga cósmica:} Alex levita inconsciente en un torbellino de energía y queda desmayado 10 minutos.\\
+\end{tabularx}
+
+\end{document}
