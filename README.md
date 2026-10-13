@@ -178,12 +178,22 @@ kob_sestao/
 │   └── 09_campana_escenas.tex        # Desarrollo paso a paso de las 8 escenas
 │
 └── images/                           # Ilustraciones y previsualizaciones
-    ├── cover_preview.png             # Portada del manual para GitHub
-    ├── ficha_preview.png             # Previsualización de ficha de jugador
-    ├── ficha_alex_preview.png        # Previsualización de ficha de Alex
-    ├── trailer_preview.gif           # Teaser animado de la aventura
-    ├── banner_titulo.png             # Banner original del proyecto
-    └── 0*.png                        # Ilustraciones de las escenas de la aventura
+    ├── 2.1 Boy_looking_at_river_glow_20261013235457.jpg    # Portada (chico mirando el río)
+    ├── 2.2 Teenage_boy_riding_BMX_bike_20261013235341.jpg  # Adolescente en bicicleta BMX
+    ├── 2.3 Scientist_examining_glowing_alie…_20261013235344.jpg  # Fig. 4.1 Francisco/Sociedad Ciencias
+    ├── 2.4 Comic_book_collage_illustration_…_20261013235409.jpg  # Collage cómic
+    ├── 2.5.1 Children_riding_bikes_near_factory_20261013235326.jpg  # Fig. 1.1 Parque Markonzaga
+    ├── 2.5.2 Abandoned_wooden_shed_with_lantern_20261013235311.jpg  # Fig. 3.1 El escondite (huerta)
+    ├── 2.5.3 Boy_confronted_by_dogs_and_20261013235337.jpg  # Chico acorralado por perros
+    ├── 2.5.4 Teenage_boy_floating_in_cave_20261013235333.jpg # Chico flotando en cueva
+    ├── 01_parque_markonzaga.jpg        # Fig. 9.1 Parque Markonzaga (escena 1 campaña)
+    ├── 03_sociedad_ciencias.jpg        # Fig. 9.2 Francisco en la Sociedad de Ciencias (escena 4)
+    ├── 04_aparicion_alex.jpg           # Alex Etxebarria (cap. 6 y escena 5)
+    ├── 05_emboscada_parque.jpg         # Emboscada de Kessler (escena 6)
+    ├── 06_cueva_arboleda.jpg           # Nave alienígena en La Arboleda (escena 7)
+    ├── 07_laboratorio_final.jpg        # Clímax final en B&W (escena 8)
+    ├── 08_backcover.jpg                # Contraportada
+    └── trailer.mp4                     # Vídeo tráiler de la aventura
 ```
 
 ---
