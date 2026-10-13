@@ -1,0 +1,15 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+Boy_uses_telekinesis_on_trash_20261013232005.jpg filter=lfs diff=lfs merge=lfs -text
+Kids_examining_glowing_crystal_map_20261013232000.jpg filter=lfs diff=lfs merge=lfs -text
+Kids_watching_industrial_factory…_20261013232008.jpg filter=lfs diff=lfs merge=lfs -text
+Scientist_and_kids_operate_labor…_20261013231956.jpg filter=lfs diff=lfs merge=lfs -text
+Abandoned_bicycle_near_alien_fossil_20261013231951.jpg filter=lfs diff=lfs merge=lfs -text
+Boy_floating_objects_with_teleki…_20261013232012.jpg filter=lfs diff=lfs merge=lfs -text
+Kids_exploring_alien_cave_20261013232017.jpg filter=lfs diff=lfs merge=lfs -text
+Scientist_showing_glowing_fossil…_20261013232020.jpg filter=lfs diff=lfs merge=lfs -text
+Teenagers_overlooking_industrial…_20261013231948.jpg filter=lfs diff=lfs merge=lfs -text
+banner_titulo.png filter=lfs diff=lfs merge=lfs -text
+cover_preview.png filter=lfs diff=lfs merge=lfs -text
+ficha_alex_preview.png filter=lfs diff=lfs merge=lfs -text
+ficha_preview.png filter=lfs diff=lfs merge=lfs -text
+trailer.mp4 filter=lfs diff=lfs merge=lfs -text
