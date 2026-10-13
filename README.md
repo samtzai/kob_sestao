@@ -202,4 +202,4 @@ kob_sestao/
 
 * **Autor:** Samtzai
 * **Juego base:** Kids on Bikes (Hunters Entertainment)
-* **Ambientación e ilustraciones:** Sestao, Margen Izquierda (1992)
+* **Ambientación e ilustraciones:** Sestao, Margen Izquierda (1992), generadas por IA específicamente para el proyecto mediante Google Flow
