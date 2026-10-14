@@ -19,28 +19,6 @@ Haz clic en las previsualizaciones para abrir y descargar los manuales completos
 
 ---
 
-## 🎬 Prólogo Audiovisual: *Entre Barcos y Acero*
-
-La aventura cuenta con un guion cinemático inmersivo diseñado como prólogo para ser narrado o reproducido antes de comenzar la partida:
-
-<p align="center">
-  <img src="images/trailer_preview.gif" alt="Teaser animado Sestao 1992" width="60%"/>
-  <br>
-  <em>Teaser cinemático de la aventura: de los recreativos al laboratorio secreto</em>
-</p>
-
-* **Ambientación:** Sestao, ría del Nervión, recreativos de Txetxu, otoño de 1992.
-* **Guion técnico detallado:** [video_prompt.txt](video_prompt.txt) (diseñado para herramientas generativas de vídeo y lectura en mesa).
-
-### Estructura de las escenas del prólogo:
-1. **La Ría de Óxido (0:00 - 0:20):** La ría del Nervión al atardecer bajo el sirimiri; chimeneas de Altos Hornos de Vizcaya y cuadrilla en bicicletas BH y Orbea.
-2. **Los Recreativos y el Cartel (0:20 - 0:40):** La Gran Vía, la sala de juegos de Txetxu (*Street Fighter II*, futbolines) y el cartel desgastado de búsqueda de Alex Etxebarria.
-3. **La Explosión en B&W (0:40 - 0:55):** Detonación esmeralda en los laboratorios de Babcock & Wilcox; bomberos y coches patrulla cruzando las vallas.
-4. **El Encuentro en la Penumbra (0:55 - 1:10):** En una caseta de huerta, Alex Etxebarria reaparece empapado con los ojos brillando en luz alienígena mientras las herramientas levitan.
-5. **El Eclipse Lunar (1:10 - 1:20):** La luna se tiñe de rojo sobre las minas de La Arboleda en la noche del 8 de diciembre de 1992.
-
----
-
 ## 🚲 La Ambientación: Sestao, 1992
 
 <p align="center">
